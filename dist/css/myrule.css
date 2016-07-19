@@ -8,6 +8,10 @@
     border: 1px solid #000;
     width: 400px;
     margin: 50px auto 0 auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: auto;
+    height: 500px;
 }
 .msg-container{
     margin: 10px 0;
@@ -57,4 +61,5 @@
     color: white;
     background-color: #33ccff;
     font-size: 16px;
+    border-left: 1px solid #000;
 }
