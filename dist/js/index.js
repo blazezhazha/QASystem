@@ -14,6 +14,8 @@ function clk(){
         xmlhttp = new ActiveObject("Microsoft.XMLHTTP");
     }
 
+    document.getElementById("input").value = "";
+
     htmlContent = "<div class='msg-container user_a'><div class='msg'>" + question + "</div></div>";
     $(".dlg").append(htmlContent);
 

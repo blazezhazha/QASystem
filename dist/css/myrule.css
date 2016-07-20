@@ -14,15 +14,16 @@
     height: 500px;
 }
 .msg-container{
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .msg{
     display: inline-block;
     padding: 10px;
     border: 1px solid #000;
     border-radius: 10px;
-    max-width: 170px;
+    max-width: 300px;
     word-wrap: normal;
+    font-family: "黑体";
 }
 .user_a{
     text-align: right;
