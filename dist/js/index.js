@@ -14,22 +14,24 @@ function clk(){
         xmlhttp = new ActiveObject("Microsoft.XMLHTTP");
     }
 
-    document.getElementById("input").value = "";
+    if(question != ""){
+        document.getElementById("input").value = "";
+        console.log(question);
+        htmlContent = "<div class='msg-container user_a'><div class='msg'>" + question + "</div></div>";
+        $(".dlg").append(htmlContent);
 
-    htmlContent = "<div class='msg-container user_a'><div class='msg'>" + question + "</div></div>";
-    $(".dlg").append(htmlContent);
+        //console.log(htmlContent);
 
-    //console.log(htmlContent);
-
-    xmlhttp.open("GET", "http://219.228.57.75:18888/proxy?" + query, true);
-    xmlhttp.send();
-    xmlhttp.onreadystatechange = function(){
-        if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
-            var answer = xmlhttp.responseText.split("</br>");
-            console.log(answer[1]);
-            var firstAnswer = answer[1].substring(2);
-            htmlContent = "<div class='msg-container user_b'><div class='msg'>" + firstAnswer + "</div></div>";
-            $(".dlg").append(htmlContent);
+        xmlhttp.open("GET", "http://219.228.57.75:18888/proxy?" + query, true);
+        xmlhttp.send();
+        xmlhttp.onreadystatechange = function(){
+            if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                var answer = xmlhttp.responseText.split("</br>");
+                console.log(answer[1]);
+                var firstAnswer = answer[1].substring(2);
+                htmlContent = "<div class='msg-container user_b'><div class='msg'>" + firstAnswer + "</div></div>";
+                $(".dlg").append(htmlContent);
+            }
         }
     }
 }

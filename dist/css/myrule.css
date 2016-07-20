@@ -2,11 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 0;
 }
 .dlg {
     padding: 20px;
     border: 1px solid #000;
-    width: 400px;
+    width: 40%;
     margin: 50px auto 0 auto;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -21,9 +22,9 @@
     padding: 10px;
     border: 1px solid #000;
     border-radius: 10px;
-    max-width: 300px;
+    max-width: 75%;
     word-wrap: normal;
-    font-family: "黑体";
+    font-size: 16px;
 }
 .user_a{
     text-align: right;
@@ -32,12 +33,11 @@
     text-align: left;
 }
 .ipt{
-    
     padding: 0;
     border: 1px solid #000;
     border-top: 0;
     border-top-color: transparent;
-    width: 400px;
+    width: 40%;
     margin: 0 auto;
     height: 40px;
 }
@@ -58,7 +58,7 @@
     display: inline-block;
     vertical-align: top;
     border: none;
-    width: 14%;
+    width: 15%;
     color: white;
     background-color: #33ccff;
     font-size: 16px;
