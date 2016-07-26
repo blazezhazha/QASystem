@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+#iphone{
+    width: 25%;
+    height: 750px;
+    border: 3px solid #999;
+    border-radius: 45px;
+    margin: 20px auto;
+    background: -webkit-linear-gradient(315deg,#f0f5f9,#f3f3f3);
+    background: linear-gradient(135deg,#f0f5f9,#f3f3f3);
+    box-shadow: 0 0 3px 4px #c0c0c0;
+}
+#iphone .upper .sensor{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #000;
+    margin: 5% auto 0 auto;
+}
+#iphone .upper .camera{
+    margin-left: 32%;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #000;
+    vertical-align: middle;
+}
+#iphone .upper .phone{
+    display: inline-block;
+    width: 20%;
+    height: 4px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background: #000;
+    vertical-align: middle;
+}
+#iphone .screen{
+    width: 90%;
+    height: 75%;
+    border: 1px solid #555;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom: transparent;
+    margin: 20px auto 0 auto;
+    background: #9cf;
+    box-shadow: 0 0 2px 1px #c0c0c0;
+    overflow-y: auto;
+}
+#iphone .home{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #c8c56b #c8c5b6 #999 #c8c5b6;
+    background: -webkit-linear-gradient(45deg, #f0f5f9, #f3f3f3);
+    background: linear-gradient(45deg, #f0f5f9, #f3f3f3);
+    margin: 25px auto 0 auto;
+}
+#iphone .ipt{
+    padding: 0;
+    border: 1px solid #555;
+    width: 90%;
+    height: 5%;
+    margin: 0 auto;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 0 0 2px 1px #c0c0c0;
+
+}
+#iphone .ipt #input{
+    width: 85%;
+    border: none;
+    /* border: 1px solid; */
+    height: 100%;
+    font-size: 16px;
+    padding-left: 10px;
+    display: inline-block;
+}
+#iphone .ipt #input:focus{
+    outline: none;
+}
+#iphone .ipt .btn{
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    width: 15%;
+    color: white;
+    background-color: #33ccff;
+    font-size: 16px;
+    border-left: 1px solid #000;
+}
+.chat p.text{
+    position: relative;
+    font-size: 14px;
+    font-family: "Consolas";
+    display: inline-block;
+    background: #fcc;
+    max-width: 70%;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 20px 10px 0 10px;
+    word-wrap: break-word;
+}
+.chat p.text:before{
+    content: "";
+    position: absolute;
+    left: -5px;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #fcc;
+    border-top: 8px solid transparent;
+}
+.chat.my {
+    text-align: right;
+}
+.chat.my p.text {
+    text-align: left;
+    color: #fff;
+    background: #0c6;
+}
+.chat.my p.text:before {
+    display: none;
+}
+.chat.my p.text:after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 8px;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #0c6;
+    border-top: 8px solid transparent;
+}
