@@ -32,12 +32,12 @@ function iphone_clk(){
                 //console.log(answer[1][0]);
                 var firstAnswer = "";
                 var flag = 0;
-                /*if(answer[1][0]=='\n'){
+                if(answer[1][0]=='\n'){
                     firstAnswer = answer[1].substring(5);
                 }
                 else{
                     firstAnswer = answer[1].substring(2);
-                }*/
+                }
                 //console.log(firstAnswer);
                 //ans_pattern = new RegExp(/^答：/);
                 if(/^答：/.test(answer[1])){
