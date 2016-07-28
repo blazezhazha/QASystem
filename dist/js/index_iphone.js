@@ -27,8 +27,24 @@ function iphone_clk(){
         xmlhttp.onreadystatechange = function(){
             if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
                 var answer = xmlhttp.responseText.split("</br>");
-                console.log(answer[1]);
-                var firstAnswer = answer[1].substring(2);
+                console.log(answer);
+                //console.log(answer[1]);
+                //console.log(answer[1][0]);
+                var firstAnswer = "";
+                var flag = 0;
+                /*if(answer[1][0]=='\n'){
+                    firstAnswer = answer[1].substring(5);
+                }
+                else{
+                    firstAnswer = answer[1].substring(2);
+                }*/
+                //console.log(firstAnswer);
+                //ans_pattern = new RegExp(/^答：/);
+                if(/^答：/.test(answer[1])){
+                    flag = 1;
+                }
+                console.log(flag);
+                console.log(answer[1].match(/^答：/));
                 htmlContent = "<div class='chat'><p class='text'>" + firstAnswer + "<p></div>";
                 $(".screen").append(htmlContent);
             }
