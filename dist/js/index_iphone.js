@@ -47,7 +47,10 @@ function iphone_clk(){
                 console.log(answer[1].match(/^答：/));
                 htmlContent = "<div class='chat'><p class='text'>" + firstAnswer + "<p></div>";
                 $(".screen").append(htmlContent);
+                var screen = document.getElementById("6s");
+                screen.scrollTop = screen.scrollHeight;
             }
         }
     }
+    
 }
